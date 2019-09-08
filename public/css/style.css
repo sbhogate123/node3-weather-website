@@ -49,3 +49,22 @@ button {
     color: white;
     padding: 8px;
 }
+
+.weatherInformation {
+    display: none;
+    margin: 20px 0;
+}
+
+.notificationContainer {
+    display: none;
+    margin: 20px 0;
+}
+
+.errorDetails {
+    display: none;
+    margin: 20px 0;
+}
+
+.details {
+    padding: 2px 0;
+}

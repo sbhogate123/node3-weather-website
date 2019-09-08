@@ -9,15 +9,29 @@
     </head>
     <body>
         {{>header}}
+        <div class="mainContainer">
+            <p>Use this site to get your weather!</p>
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
 
-        <p>Use this site to get your weather!</p>
-        <form>
-            <input placeholder="Location">
-            <button>Search</button>
-        </form>
+            <div class="weatherInformation">
+                <div class="details"><span>Location : </span><span id="loactionDetails"></span></div>
+                <div class="details"><span>Weather Summary : </span><span id="weatherSummary"></span></div>
+                <div class="details"><span>Today's High Temperature : </span><span id="temperatureHigh"></span></div>
+                <div class="details"><span>Today's Low Temperature : </span><span id="temperatureLow"></span></div>
+                <div class="details"><span>Humidity : </span><span id="humidity"></span></div>
+            </div>
 
-        <p id="message-1"></p>
-        <p id="message-2"></p>
+            <div class="notificationContainer">
+                <p id="loadingTextMsg">Loading...</p>
+            </div>
+
+            <div class="errorDetails">
+                <div><span>Error : </span><span id="errorText"></span></div>
+            </div>
+        </div>
         {{>footer}}
 
         <script src="/js/app.js"></script>
